@@ -21,6 +21,20 @@ nav ul
 nav li
 {
     list-style-type: none;
+    padding:20px;
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+    padding:20px;
+}
+
+nav a:hover
+{
+    border-top:#0065FC solid 2px;
+    color:#0065FC;
 }
 
 h1, h2
@@ -59,11 +73,29 @@ button
     border-radius:15px;
 }
 
-article, aside
+section
+{
+    display:flex;
+    width:auto;
+    justify-content: space-between;
+}
+
+article
 {
     background-color: #F2F2F2;
     border-radius:15px;
     padding:20px 30px 20px 30px;
+    width:60%;
+}
+
+aside
+{
+    background-color: #F2F2F2;
+    border-radius:15px;
+    padding:20px 30px 20px 30px;
+    display:flex;
+    flex-direction: column;
+    width:29%;
 }
 
 footer
@@ -72,5 +104,17 @@ footer
     display:flex;
 }
 
-/* Classes */
+a img
+{
+    max-width: 200px;
+}
 
+/* Classes */
+/* ID */
+#accomodationsMarseille
+{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
