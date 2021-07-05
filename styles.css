@@ -46,7 +46,7 @@ h1, h2
 h3
 {
     font-weight:bold;
-    font-size:1.1em;
+    font-size:1em;
 }
 
 p
@@ -77,6 +77,7 @@ section
 {
     display:flex;
     width:auto;
+    height:670px;
     justify-content: space-between;
 }
 
@@ -93,8 +94,6 @@ aside
     background-color: #F2F2F2;
     border-radius:15px;
     padding:20px 30px 20px 30px;
-    display:flex;
-    flex-direction: column;
     width:29%;
 }
 
@@ -106,15 +105,48 @@ footer
 
 a img
 {
-    max-width: 200px;
+    width: 100%;
+    max-height: 180px;
+    position:absolute;
+    top:0px;
+    border-radius:20px;
 }
 
 /* Classes */
-/* ID */
-#accomodationsMarseille
+.accomodationsMarseille
 {
     display:flex;
-    justify-content:space-between;
     flex-wrap: wrap;
-    align-content:space-around;
+    justify-content: space-between;
+    align-content:space-between;
+    height:500px;
+}
+
+.accomodationsMarseille_item
+{
+    border: white 5px solid;
+    border-radius:20px;
+    position:relative;
+    width:28%;
+    height:200px;
+}
+
+.accomodationsMarseille_list_text
+{
+    background-color:white;
+    line-height:0.4em;
+    padding-left: 5%;
+    padding-bottom:2%;
+    width:95%;
+    border-radius: 0px 0px 5px 5px;
+    position:absolute;
+    z-index:1;
+    bottom:0;
+}
+
+
+#subscriptionLink
+{
+    font-weight:bold;
+    color:#0065FC;
 }
