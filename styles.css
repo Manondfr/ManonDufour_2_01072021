@@ -73,7 +73,7 @@ button
     border-radius:15px;
 }
 
-section
+main
 {
     display:flex;
     width:auto;
@@ -81,12 +81,16 @@ section
     justify-content: space-between;
 }
 
+section
+{
+
+}
+
 article
 {
-    background-color: #F2F2F2;
-    border-radius:15px;
-    padding:20px 30px 20px 30px;
-    width:60%;
+    border: white 5px solid;
+    border-radius:20px;
+    position:relative;
 }
 
 aside
@@ -115,20 +119,8 @@ footer
     opacity:0.3;
 }
 
-.accomodationsMarseilleAll
-{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content:space-between;
-    height:500px;
-}
-
 .accomodationsMarseilleAll_item
 {
-    border: white 5px solid;
-    border-radius:20px;
-    position:relative;
     width:28%;
     height:200px;
 }
@@ -155,19 +147,8 @@ footer
     bottom:0;
 }
 
-.accomodationsMarseillePopular /* à travailler */
-{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    height:600px;
-}
-
 .accomodationsMarseillePopular_item /* celui-là est ok */
 {
-    border: white 5px solid;
-    border-radius:20px;
-    position:relative;
     width:90%;
     margin:auto;
     margin-top:0px;
@@ -237,4 +218,29 @@ footer
 #filtersPart
 {
     display:flex;
+}
+
+#sectionAccomodations
+{
+    background-color: #F2F2F2;
+    border-radius:15px;
+    padding:20px 30px 20px 30px;
+    width:60%;
+}
+
+#accomodationsMarseilleAll
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-between;
+    height:500px;
+}
+
+#accomodationsMarseillePopular /* à travailler */
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:600px;
 }
