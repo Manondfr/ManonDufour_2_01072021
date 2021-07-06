@@ -13,7 +13,7 @@ header
     justify-content: space-between;
 }
 
-nav ul
+ul
 {
     display:flex;
 }
@@ -103,17 +103,19 @@ footer
     display:flex;
 }
 
-a img
+/* Classes */
+.blueStar
 {
-    width: 100%;
-    max-height: 180px;
-    position:absolute;
-    top:0px;
-    border-radius:20px;
+    color:#0065FC;
 }
 
-/* Classes */
-.accomodationsMarseille
+.greyStar
+{
+    color:rgb(128, 128, 128);
+    opacity:0.3;
+}
+
+.accomodationsMarseilleAll
 {
     display:flex;
     flex-wrap: wrap;
@@ -122,7 +124,7 @@ a img
     height:500px;
 }
 
-.accomodationsMarseille_item
+.accomodationsMarseilleAll_item
 {
     border: white 5px solid;
     border-radius:20px;
@@ -131,7 +133,16 @@ a img
     height:200px;
 }
 
-.accomodationsMarseille_list_text
+.accomodationsMarseilleAll_item_image
+{
+    width: 100%;
+    max-height: 180px;
+    position:absolute;
+    top:0px;
+    border-radius:20px;
+}
+
+.accomodationsMarseilleAll_item_text
 {
     background-color:white;
     line-height:0.4em;
@@ -144,9 +155,86 @@ a img
     bottom:0;
 }
 
+.accomodationsMarseillePopular /* à travailler */
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:600px;
+}
 
+.accomodationsMarseillePopular_item /* celui-là est ok */
+{
+    border: white 5px solid;
+    border-radius:20px;
+    position:relative;
+    width:90%;
+    margin:auto;
+    margin-top:0px;
+    height:160px;
+}
+
+.accomodationsMarseillePopular_item_image /* à travailler */
+{
+    max-height: 160px;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    border-radius:20px;
+}
+
+.accomodationsMarseillePopular_item_text /* à travailler */
+{
+    background-color:white;
+    line-height:1.1em;
+    padding-left:5%;
+    width:50%;
+    height:100%;
+    border-radius: 0px 10px 10px 0px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:1;
+}
+
+.filters
+{
+    display:flex;
+    list-style-type: none;
+    margin-left:20px;
+    padding: 10px 20px 10px 50px;
+    border: solid 2px rgba(128, 128, 128, 0.3);
+    border-radius:20px;
+    position:relative;
+    height:20px;
+}
+
+.circle
+{
+    background: royalblue;
+    height:43px;
+    width:43px;
+    border-radius:50%;
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    display:flex;
+}
+
+.filters_icon
+{
+
+}
+
+
+/* ID */
 #subscriptionLink
 {
     font-weight:bold;
     color:#0065FC;
+}
+
+#filtersPart
+{
+    display:flex;
 }
