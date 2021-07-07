@@ -16,7 +16,7 @@
     <!-- Header -->
     <header>
         <img src="images/logo/Reservia.svg" alt='Logo Reservia' id="logo"> 
-        <nav id="desktopMenu">
+        <nav class="desktopItems">
             <ul>
                 <li><a href="#anchorAccomodations">Hébergements</a></li>
                 <li><a href="#anchorActivities">Activités</a></li>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        <nav id="mobileMenu">
+        <nav class="mobileItems">
             <p><a href="#" id="subscriptionLink">S'inscrire</a></p>
             <ul>
                 <li><a href="#anchorAccomodations">Hébergements</a></li>
@@ -39,11 +39,12 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <form method="POST" action="#">
-                    <i class="fa fa-map-marker-alt"></i>
-                    <p>
-                        <input type="search" name="cityChoice" placeholder="Marseille, France" size="30"/>
-                    </p>
-                    <button type="submit">Rechercher</button>
+                    <div>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <input type="search" name="cityChoice" placeholder="Marseille, France" size="24"/>
+                    </div>
+                    <button type="submit" class="desktopItems">Rechercher</button>
+                    <button type="submit" class="mobileItems"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             <div id="filtersPart">

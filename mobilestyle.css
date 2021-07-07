@@ -7,7 +7,7 @@ body
 
 header
 {
-    width:auto;
+    width:100%;
 }
 
 ul
@@ -67,9 +67,51 @@ strong
     font-weight:bold;
 }
 
-#desktopMenu
+form
+{
+    border : 1px #F2F2F2 solid;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    height:30px;
+}
+
+input
+{
+    height:95%;
+    border:none;
+    position:relative;
+    top:-1px;
+    font-weight: bold;
+}
+
+button
+{
+    height:101%;
+    border: #0065FC solid 1px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: #0065FC;
+    position:relative;
+    right:-1px;
+}
+
+.desktopItems
 {
     display:none;
+}
+
+.fa-map-marker-alt
+{
+    border: #F2F2F2 solid 1px;
+    border-radius:10px 0px 0px 10px;
+    background-color: #F2F2F2;
+    padding: 8px 10px 8px 10px;
+    position:relative;
+    left:-1px;
+    font-size: 0.9em;
 }
 
 #subscriptionLink
