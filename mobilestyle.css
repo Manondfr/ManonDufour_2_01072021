@@ -125,7 +125,12 @@ button
     height:38px;
 }
 
-.circle
+.filters:hover
+{
+    border:3px solid rgba(128, 128, 128,0.3);
+}
+
+.filters_circle
 {
     width:42px;
     height:42px;
@@ -139,7 +144,7 @@ button
     left:-2px;
 }
 
-svg
+.filters_svg
 {
     fill: #0065FC;    
 }
@@ -156,4 +161,21 @@ svg
 #filtersPart ul
 {
     height:150px;
+}
+
+#info_svg
+{
+    background-color:#0065FC;
+    fill:white;
+    border-radius:50%;
+}
+
+#info
+{
+    display:flex;
+}
+
+#info_availableAccomodations
+{
+    margin-left:10px;
 }
