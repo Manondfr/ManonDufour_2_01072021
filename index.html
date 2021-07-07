@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_package_v0.16/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobilestyle.css" media="all and (max-device-width:480px)">
+    <link rel="stylesheet" href="desktopstyle.css" media="all and (min-width:992px)">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="./fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css" type="text/css" rel="stylesheet"> 
 </head>
@@ -14,12 +15,20 @@
 
     <!-- Header -->
     <header>
-        <img src="images/logo/Reservia.svg" alt='Logo Reservia' id="logo">
-        <nav>
+        <img src="images/logo/Reservia.svg" alt='Logo Reservia' id="logo"> 
+        <nav id="desktopMenu">
             <ul>
                 <li><a href="#anchorAccomodations">Hébergements</a></li>
                 <li><a href="#anchorActivities">Activités</a></li>
                 <li><a href="#" id="subscriptionLink">S'inscrire</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobileMenu">
+            <p><a href="#" id="subscriptionLink">S'inscrire</a></p>
+            <ul>
+                <li><a href="#anchorAccomodations">Hébergements</a></li>
+                <li><a href="#anchorActivities">Activités</a></li>
             </ul>
         </nav>
     </header>
