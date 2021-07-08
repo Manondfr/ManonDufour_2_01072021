@@ -195,7 +195,7 @@ footer
 {
     display:flex;
     list-style-type: none;
-    margin-left:20px;
+    margin-left:10px;
     padding: 10px 20px 10px 50px;
     border: solid 2px rgba(128, 128, 128, 0.3);
     border-radius:20px;
@@ -203,21 +203,30 @@ footer
     height:20px;
 }
 
-.filters_circle
+.filters:hover
 {
-    background: royalblue;
-    height:43px;
-    width:43px;
-    border-radius:50%;
-    position:absolute;
-    top:-1px;
-    left:-1px;
-    display:flex;
+    color:#0065FC;
+    cursor: pointer;
 }
 
-.filters_icon
+.filters_circle
 {
+    width:43px;
+    height:43px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius:50%;
+    margin-right:10px;
+    position:absolute;
+    left:-5px;
+    top:-2px;
+}
 
+.filtersIcon, .blueStar
+{
+    fill: #0065FC;    
 }
 
 
@@ -231,6 +240,7 @@ footer
 #filtersPart
 {
     display:flex;
+    align-items:center;
 }
 
 #sectionAccomodations
