@@ -215,15 +215,15 @@ article
     padding-top:0px;
 }
 
-#accomodationsMarseilleAll
+#accomodationsMarseilleAll, #anchorActivities
 {
-    height:1150px;
+    height:1250px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
 }
 
-.accomodationsMarseilleAll_item
+.horizontalArticle
 {
     border: white 5px solid;
     border-radius:20px;
@@ -235,7 +235,7 @@ article
     position:relative;
 }
 
-.accomodationsMarseilleAll_item_image
+.accomodationsMarseilleAll_item_image, .activities_item_image
 {
     width:100%;
     max-height:170px;
@@ -245,14 +245,14 @@ article
     border-radius: 20px;
 }
 
-.accomodationsMarseilleAll_item_text
+.accomodationsMarseilleAll_item_text, .activities_item_text
 {
     position:absolute;
     bottom:0px;
     background-color:white;
     line-height:0.7em;
     width:96%;
-    height:45%;
+    max-height:45%;
     z-index:1;
     border-radius: 0px 0px 10px 10px;
     padding-left:5%;
