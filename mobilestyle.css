@@ -56,11 +56,13 @@ h3
 {
     font-weight:bold;
     font-size:1em;
+    margin-bottom:10px;
 }
 
 p
 {
     font-size:0.9em;
+    margin-top:0px;
 }
 
 strong
@@ -84,7 +86,6 @@ input
     border:none;
     position:relative;
     top:-1px;
-    font-weight: bold;
 }
 
 button
@@ -97,6 +98,24 @@ button
     background-color: #0065FC;
     position:relative;
     right:-1px;
+}
+
+main
+{
+    display:flex;
+    flex-direction: column-reverse;
+    margin-left:-30px;
+    margin-right:-30px;
+}
+
+aside
+{
+    background-color: #F2F2F2;
+}
+
+article
+{
+
 }
 
 .desktopItems
@@ -158,6 +177,53 @@ button
     color:#0065FC;
 }
 
+.accomodationsMarseillePopular_item
+{
+    border: white 5px solid;
+    border-radius:20px;
+    height:130px;
+    width:80%;
+    margin:auto;
+    margin-top:0px;
+    position:relative;
+}
+
+.accomodationsMarseillePopular_item_image
+{
+    height:130px;
+    width:45%;
+    border-radius:20px;
+    position:absolute;
+    top:0px;
+    left: 0px;
+}
+
+.accomodationsMarseillePopular_item_text
+{
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color:white;
+    border-radius:0px 10px 10px 0px;
+    width:60%;
+    height:95%;
+    z-index:1;
+    line-height:1em;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-top:0px;
+}
+
+.blueStar
+{
+    fill:#0065FC;
+}
+
+.greyStar
+{
+    fill:rgba(128, 128, 128,0.3);
+}
+
 #filtersPart ul
 {
     height:150px;
@@ -178,4 +244,12 @@ button
 #info_availableAccomodations
 {
     margin-left:10px;
+}
+
+#accomodationsMarseillePopular /* à travailler */
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:500px;
 }
