@@ -41,7 +41,7 @@ h1, h2
 {
     font-weight:bold;
     font-size:1.5em;
-    margin-bottom:0;
+    margin-bottom:0px;
 }
 
 h3
@@ -136,7 +136,7 @@ footer
 .horizontalArticle
 {
     width:28%;
-    height:200px;
+    min-height:200px;
     border-radius:20px;
     box-shadow: 0px 0px 15px rgba(128, 128, 128,0.3);
 }
@@ -148,6 +148,14 @@ footer
     position:absolute;
     top:0px;
     border-radius:20px;
+}
+
+.horizontalArticle_image
+{
+    width:100%;
+    min-height:170px;
+    max-height:200px;
+    position:absolute;
 }
 
 .horizontalArticle_text
@@ -166,7 +174,6 @@ footer
 {
     width:90%;
     margin:auto;
-    margin-top:0px;
     height:150px;
     box-shadow: 0px 0px 15px rgba(128, 128, 128,0.3);
     border-radius:20px;
@@ -266,13 +273,17 @@ footer
     height:500px;
 }
 
+#anchorActivities
+{
+    height:1500px;
+}
+
 #accomodationsMarseillePopular /* à travailler */
 {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
     height:550px;
-    border:red 1px solid;
 }
 
 .mobileItems
@@ -318,4 +329,28 @@ footer
     display:flex;
     justify-content: space-between;
     align-items:baseline;
+}
+
+#tryactivities
+{
+    border:red solid 1px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.try2
+{
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.expandedArticle
+{
+    max-height:400px;
+}
+
+.activities_item_image
+{
+    border:red solid 1px;
+    max-height:400px;
 }
