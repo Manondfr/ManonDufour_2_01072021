@@ -18,7 +18,6 @@ ul
 {
     display:flex;
     list-style-type: none;
-    font-size: 0.8em;
 }
 
 
@@ -48,21 +47,20 @@ nav a:hover
 h1, h2
 {
     font-weight:bold;
-    font-size:1.2em;
+    font-size:1.5em;
     margin-bottom:0px;
 }
 
 h3
 {
     font-weight:bold;
-    font-size:0.8em;
+    font-size:1em;
 }
 
 p
 {
-    font-size:0.8em;
+    font-size:0.9em;
     margin-top:0px;
-    margin-bottom:10px;
 }
 
 strong
@@ -75,8 +73,8 @@ form
     border : 1px #F2F2F2 solid;
     border-radius:10px;
     display:flex;
-    height:30px;
-    width:30%;
+    height:35px;
+    width:20%;
     margin-bottom:30px;
     margin-top: 20px;
 }
@@ -104,7 +102,7 @@ main
 {
     display:flex;
     width:auto;
-    height:600px;
+    height:670px;
     justify-content: space-between;
 }
 
@@ -120,7 +118,7 @@ aside
     border-radius:15px;
     padding:20px 30px 20px 30px;
     width:29%;
-    height:500px;
+    height:600px;
 }
 
 
@@ -142,7 +140,7 @@ aside
     display:flex;
     list-style-type: none;
     margin-left:10px;
-    padding: 8px 20px 4px 40px;
+    padding: 10px 20px 10px 50px;
     border: solid 2px rgba(128, 128, 128, 0.3);
     border-radius:20px;
     position:relative;
@@ -157,8 +155,8 @@ aside
 
 .filters_circle
 {
-    width:35px;
-    height:35px;
+    width:43px;
+    height:43px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -180,14 +178,16 @@ aside
 
 .whiteBorder
 {
-    width:30%;
+    min-width:28%;
     border: white 5px solid;
-    height:140px;
+    height:200px;
 }
 
 .horizontalArticle_image
 {
-    height:130px;
+    
+    min-height:170px;
+    max-height:200px;
 }
 
 .accomodationsMarseilleAll_item_image
@@ -213,7 +213,6 @@ aside
     line-height:0.4em;
     padding-left: 5%;
     width:95%;
-    max-height:45%;
     border-radius: 0px 0px 5px 5px;
     position:absolute;
     z-index:1;
@@ -226,12 +225,12 @@ aside
     flex-direction: column;
     justify-content: space-between;
     width:20%;
-    height:280px;
+    height:380px;
 }
 
 .expandedArticle
 {
-    max-height:280px;
+    max-height:380px;
     width:20%;
     position:relative;
     overflow:hidden;
@@ -248,7 +247,7 @@ aside
 {
     width:90%;
     margin:auto;
-    height:120px;
+    height:150px;
     box-shadow: 0px 0px 15px rgba(128, 128, 128,0.3);
     border-radius:20px;
     border: white 5px solid;
@@ -256,7 +255,7 @@ aside
 
 .accomodationsMarseillePopular_item_image /* à travailler */
 {
-    height: 120px;
+    height: 150px;
     position:absolute;
     left:0px;
     bottom:0px;
@@ -333,20 +332,20 @@ footer
     flex-wrap: wrap;
     justify-content: space-between;
     align-content:space-around;
-    height:400px;
+    height:500px;
 }
 
 #anchorActivities
 {
-    height:350px;
+    height:500px;
 }
 
 #accomodationsMarseillePopular /* à travailler */
 {
     display:flex;
     flex-direction:column;
-    justify-content: space-evenly;
-    height:470px;
+    justify-content: space-between;
+    height:550px;
 }
 
 #sectionAccomodations
@@ -354,8 +353,8 @@ footer
     background-color: #F2F2F2;
     border-radius:15px;
     padding:20px 30px 20px 30px;
-    width:58%;
-    height:500px;
+    width:60%;
+    height:600px;
 }
 
 #accomodationsMarseillePopular_title
@@ -390,10 +389,9 @@ footer
     border: #F2F2F2 solid 1px;
     border-radius:10px 0px 0px 10px;
     background-color: #F2F2F2;
-    padding:7px;
+    padding:9px;
     position:relative;
     left:-1px;
-    top:-1px;
     font-size: 0.9em;
 }
 
