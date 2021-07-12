@@ -96,9 +96,10 @@ aside
     height:180px;
 }
 
-.accomodationsMarseilleAll_item_image
+.sectionAccomodationsAll_image
 {
-    max-height: 180px;
+    max-height:380px;
+    top:-150px;
 }
 
 .horizontalArticle_text
@@ -107,20 +108,20 @@ aside
     border-radius: 0px 0px 5px 5px;
 }
 
-.accomodationsMarseillePopular_item 
+.sectionAccomodationsPopular_item
 {
     width:90%;
     height:150px;
 }
 
-.accomodationsMarseillePopular_item_image 
+.sectionAccomodationsPopular_item_image
 {
-    height: 150px;
-    left:0px;
-    bottom:0px;
+    height:350px;
+    left:-60px;
+    bottom:-60px;
 }
 
-.accomodationsMarseillePopular_item_text 
+.sectionAccomodationsPopular_item_text
 {
     width:50%;
 }
@@ -135,20 +136,20 @@ aside
     height:600px;
 }
 
-#accomodationsMarseilleAll
+#sectionAccomodationsAll
 {
     justify-content: space-between;
     align-content:space-around;
     height:450px;
 }
 
-#accomodationsMarseillePopular 
+#sectionAccomodationsPopular
 {
     flex-direction:column;
     height:550px;
 }
 
-#accomodationsMarseillePopular_title
+#sectionAccomodationsPopular_title
 {
     width:90%;
     align-items:baseline;
@@ -157,7 +158,7 @@ aside
 
 /* Contenu activités */
 /* Classes */
-.try2
+.flexSections_contractedArticle
 {
     width:20%;
     height:380px;
@@ -178,11 +179,17 @@ aside
     overflow:hidden;
 }
 
-.activities_item_image
+.horizontalArticleActivities_image
 {
-    max-height:400px;
-    width:500px;
+    max-height:600px;
+    min-width:550px;
     left:-50px;
+}
+
+.contractedArticle .horizontalArticleActivities_image
+{
+    position:absolute;
+    top:-200px;
 }
 
 /* ID */
@@ -203,7 +210,7 @@ aside
     padding-bottom:10px;
 }
 
-.footerMenu
+.footerPart_menu
 {
     padding-left:0;
     height:50%;
