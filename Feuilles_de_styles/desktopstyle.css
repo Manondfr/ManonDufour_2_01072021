@@ -1,0 +1,226 @@
+/* Balises générales */
+header
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    font-size: 0.8em;
+}
+
+nav li
+{
+    padding:20px;
+}
+
+nav a
+{
+    padding:20px;
+}
+
+nav a:hover
+{
+    border-top:#0065FC solid 2px;
+}
+
+h1, h2
+{
+    font-size:1.2em;
+    margin:25px 0px 10px 0px;   
+}
+
+h3
+{
+    font-size:0.8em;
+}
+
+p
+{
+    font-size:0.8em;
+    margin-bottom:10px;
+}
+
+form
+{
+    width:300px;
+}
+
+main
+{
+    height:600px;
+    justify-content: space-between;
+}
+
+aside
+{
+    border-radius:15px;
+    padding:20px 30px 20px 30px;
+    width:29%;
+    height:500px;
+}
+
+
+/* En-tête et filtres */
+/* Classes */
+.mobileItems
+{
+    display:none;
+}
+
+.filters
+{
+    padding: 8px 20px 8px 40px;
+}
+
+.filters_circle
+{
+    width:35px;
+    height:35px;
+}
+
+/* ID */
+#filtersPart
+{
+    display:flex;
+    align-items:center;
+}
+
+/* Icônes */
+#mapMarkerIcon
+{
+    padding:10px;
+    top:-1px;
+}
+
+
+/* Contenu hébergements */
+/* Classes */
+.whiteBorder
+{
+    width:30%;
+    height:140px;
+}
+
+.sectionAccomodationsAll_image
+{
+    height: 180px;
+    top:-60px;
+}
+
+.horizontalArticle_text
+{
+    line-height:0.4em;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.sectionAccomodationsPopular_item
+{
+    width:90%;
+    height:120px;
+}
+
+.sectionAccomodationsPopular_item_image
+{
+    height: 180px;
+    left:-25px;
+    bottom:0px;
+}
+
+.sectionAccomodationsPopular_item_text
+{
+    width:50%;
+}
+
+/* ID */
+#sectionAccomodations
+{
+    background-color: #F2F2F2;
+    border-radius:15px;
+    padding:20px 30px 20px 30px;
+    width:58%;
+    height:500px;
+}
+
+#sectionAccomodationsAll
+{
+    justify-content: space-between;
+    align-content:space-around;
+    height:350px;
+}
+
+#sectionAccomodationsPopular
+{
+    flex-direction:column;
+    height:450px;
+}
+
+#sectionAccomodationsPopular_title
+{
+    width:90%;
+    align-items:baseline;
+}
+
+
+/* Contenu activités */
+/* Classes */
+.flexSections_contractedArticle
+{
+    width:20%;
+    height:280px;
+}
+
+.expandedArticle
+{
+    max-height:280px;
+    width:20%;
+    position:relative;
+    overflow:hidden;
+    overflow-x:hidden;
+}
+
+.contractedArticle
+{
+    height:45%;
+    overflow:hidden;
+}
+
+.horizontalArticleActivities_image
+{
+    max-height:400px;
+    max-width:500px;
+    left:-50px;
+}
+
+.contractedArticle .horizontalArticleActivities_image
+{
+    position:absolute;
+    top:-130px;
+    left:-30px;
+}
+
+/* ID */
+#anchorActivities
+{
+    height:350px;
+    margin-bottom:30px;
+}
+
+
+/* Footer */
+.footerPart
+{
+    margin-right:20%;
+}
+
+.footerPart li
+{
+    padding-bottom:10px;
+}
+
+.footerPart_menu
+{
+    padding-left:0;
+    height:50%;
+}
