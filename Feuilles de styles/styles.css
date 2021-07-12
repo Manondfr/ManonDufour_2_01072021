@@ -1,0 +1,287 @@
+/* Balises générales, en-tête et filtres */
+body
+{
+    font-family:'Raleway', sans-serif;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+header
+{
+    width:auto;
+}
+
+ul
+{
+    display:flex;
+    list-style-type: none;
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color:#0065FC;
+}
+
+h1, h2, h3
+{
+    font-weight:bold;
+}
+
+p
+{
+    margin-top:0;
+}
+
+strong
+{
+    font-weight:bold;
+}
+
+form
+{
+    height:35px;
+    display:flex;
+    justify-content:space-between;
+    border : 1px #F2F2F2 solid;
+    border-radius:10px;
+    margin:20px 0px 30px 0px;
+}
+
+input
+{
+    height:95%;
+    border:none;
+    position:relative;
+    top:1px;
+}
+
+button
+{
+    height:100%;
+    padding:0px 10px 0px 10px;
+    background-color: #0065FC;
+    color:white;
+    border: #0065FC solid 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main
+{
+    display:flex;
+    width:auto;
+}
+
+aside
+{
+    background-color: #F2F2F2;
+}
+
+article
+{
+    position:relative;
+    overflow-x:hidden;
+    overflow:hidden;
+}
+
+footer
+{
+    display:flex;
+    background-color: #F2F2F2;
+    margin: 0px -30px -10px -30px;
+    padding:10px 0px 0px 30px;
+}
+
+/* En-tête et filtres */
+/* Classes */
+.subscriptionLink
+{
+    font-weight:bold;
+    color:#0065FC;
+}
+
+.filters
+{
+    font-weight:bold;
+    display:flex;
+    position:relative;
+    border: solid 2px rgba(128, 128, 128, 0.3);
+    border-radius:25px;
+    align-items: center;
+    margin-left:0;
+    margin-right:10px;
+}
+
+.filters:hover
+{
+    color:#0065FC;
+    cursor: pointer;
+}
+
+.filters_circle
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:-5px;
+    top:-2px;
+    background-color: #DEEBFF;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+/* ID */
+#infoPart
+{
+    display:flex;
+    margin:10px 0px 10px 0px;
+}
+
+#infoPart_availableAccomodations
+{
+    margin:5px 0px 10px 10px;
+}
+
+/* Icônes */
+#mapMarkerIcon
+{
+    border: #F2F2F2 solid 1px;
+    border-radius:10px 0px 0px 10px;
+    background-color: #F2F2F2;
+    position:relative;
+    left:-1px;
+    font-size: 0.9em;
+}
+
+#infoPart_icon
+{
+    background-color:#0065FC;
+    fill:white;
+    border-radius:50%;
+    position:relative;
+    top:2px;
+}
+
+
+
+/* Contenu hébergements */
+/* Classes */
+.flexSections
+{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-content:space-around;
+}
+
+.horizontalArticle
+{
+    border-radius:20px;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128,0.3);
+}
+
+.whiteBorder
+{
+    border: white 5px solid;
+}
+
+.horizontalArticle_image
+{
+    min-height:100%;
+    min-width:100%;
+    position:absolute;
+    top:0px;
+    border-radius:20px;
+}
+
+.horizontalArticle_text
+{
+    background-color:white;
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    max-height:45%;
+    width:96%;
+    padding-left: 5%;
+    padding-bottom:3px;
+}
+
+.sectionAccomodationsPopular_item
+{
+    border: white 5px solid;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128,0.3);
+    margin:auto;
+    position:relative;
+    overflow-x:hidden;
+    overflow:hidden;
+}
+
+.sectionAccomodationsPopular_item_image
+{
+    border-radius:20px;
+    position:absolute;
+    min-width:60%;
+}
+
+.sectionAccomodationsPopular_item_text
+{
+    background-color:white;
+    line-height:1.1em;
+    border-radius:0px 10px 10px 0px;
+    padding: 0px 0px 10px 10px;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    top:0px;
+    right:0px;
+    bottom:0;
+}
+
+/* ID */
+#sectionAccomodationsPopular_title
+{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Contenu activités */
+/* Classes */
+.flexSections_contractedArticle
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.horizontalArticleActivities_image
+{
+    position:absolute;
+}
+
+/* Footer */
+.footerPart_menu
+{
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* Icônes */
+.filters_icon, .blueStar
+{
+    fill: #0065FC;    
+}
+
+.greyStar
+{
+    fill:rgba(128, 128, 128,0.3);
+}

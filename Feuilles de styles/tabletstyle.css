@@ -1,0 +1,230 @@
+/* Balises générales */
+header
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+
+nav li
+{
+    padding:20px 0px 20px 0px;
+}
+
+nav a
+{
+    padding:20px 8px 20px 8px;
+}
+
+nav a:hover
+{
+    border-top:#0065FC solid 2px;
+}
+
+h1, h2
+{
+    font-size:1.1em;
+    margin:25px 0px 5px 0px;
+}
+
+h3
+{
+    font-size:0.8em;
+    margin:8px 0px 4px 0px;
+}
+
+p
+{
+    font-size:0.8em;
+    margin-bottom:10px;
+}
+
+form
+{
+    width:300px;
+}
+
+main
+{
+    flex-wrap:wrap;
+}
+
+aside
+{
+    border-radius:15px;
+    margin-top:15px;
+    padding:20px 30px 20px 30px;
+    width:100%;
+}
+
+
+/* En-tête et filtres */
+/* Classes */
+.mobileItems
+{
+    display:none;
+}
+
+.filters
+{
+    margin-top:5px;
+    padding: 8px 20px 8px 40px;
+    height:16px;
+}
+
+.filters_circle
+{
+    width:35px;
+    height:35px;
+}
+
+/* ID */
+#filtersPart ul
+{
+    padding:0;
+}
+
+/* Icônes */
+#mapMarkerIcon
+{
+    padding:10px;
+    top:-1px;
+}
+
+
+/* Contenu hébergements */
+/* Classes */
+.whiteBorder
+{
+    min-width:200px;
+    width:30%;
+    max-width:230px;
+    margin: 10px 0px 10px 10px;
+    height:140px;
+}
+
+.sectionAccomodationsAll_image
+{
+    max-height: 180px;
+    top:-60px;
+}
+
+.horizontalArticle_text
+{
+    line-height:0.7em;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.sectionAccomodationsPopular_item
+{
+    min-width:250px;
+    height:120px;
+    margin:10px 0px 10px 10px;
+}
+
+.sectionAccomodationsPopular_item_image
+{
+    height: 160px;
+    left:-30px;
+    bottom:0px;
+}
+
+.sectionAccomodationsPopular_item_text
+{
+    width:50%;
+}
+
+/* ID */
+#sectionAccomodations
+{
+    background-color: #F2F2F2;
+    border-radius:15px;
+    padding:20px 30px 20px 30px;
+    width:100%;
+} 
+
+#sectionAccomodationsAll
+{
+    justify-content: space-around;
+    align-content:space-around;
+    min-height:350px;
+    max-height:1200px;
+} 
+
+#sectionAccomodationsPopular_title
+{
+    width:85%;
+    align-items:baseline;
+}
+
+
+/* Contenu activités */
+/* Classes */
+.flexSections_contractedArticle
+{
+    min-width:180px;
+    width:35%;
+    margin: 10px 5px 10px 5px;
+    height:280px;
+}
+
+.expandedArticle
+{
+    max-height:280px;
+    min-width:180px;
+    width:35%;
+    margin: 10px 5px 10px 5px;
+    position:relative;
+    overflow:hidden;
+    overflow-x:hidden;
+}
+
+.contractedArticle
+{
+    height:45%;
+    overflow:hidden;
+}
+
+.horizontalArticleActivities_image
+{
+    min-width:400px;
+    height:450px;
+    left:-50px;
+    top:-50px;
+}
+
+.contractedArticle .horizontalArticleActivities_image
+{
+    position:absolute;
+    top:-150px;
+}
+
+/* ID */
+#anchorActivities
+{
+    height:650px;
+}
+
+
+/* Footer */
+/* Classes */
+.footerPart
+{
+    margin-right:20%;
+}
+
+.footerPart li
+{
+    padding-bottom:10px;
+}
+
+.footerPart_menu
+{
+    padding-left:0;
+    height:80%;
+}
