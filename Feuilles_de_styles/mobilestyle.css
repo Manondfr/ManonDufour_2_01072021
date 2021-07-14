@@ -19,7 +19,7 @@ nav li:not(:last-child)
     text-align: center;
 }
 
-nav li:not(:last-child):hover, nav li:not(:last-child):active, nav li:not(:last-child):focus
+nav li:not(:last-child):active, nav li:not(:last-child):focus
 {
     border-bottom:#0065FC solid 2px;
 }
