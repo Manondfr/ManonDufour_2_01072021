@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_package_v0.16/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Feuilles_de_styles/styles.css">
-    <link rel="stylesheet" href="Feuilles_de_styles/mobilestyle.css" media="all and (max-width:441px)">
-    <link rel="stylesheet" href="Feuilles_de_styles/tabletstyle.css" media="all and (min-width: 441px) and (max-width:991px)">
-    <link rel="stylesheet" href="Feuilles_de_styles/desktopstyle.css" media="all and (min-width:991px) and (max-width:1199px)">
-    <link rel="stylesheet" href="Feuilles_de_styles/largedesktopstyle.css" media="all and (min-width:1199px)">
+    <link rel="stylesheet" href="Feuilles_de_styles/mobilestyle.css" media="all and (max-width:442px)">
+    <link rel="stylesheet" href="Feuilles_de_styles/tabletstyle.css" media="all and (min-width: 443px) and (max-width:992px)">
+    <link rel="stylesheet" href="Feuilles_de_styles/desktopstyle.css" media="all and (min-width:993px) and (max-width:1200px)">
+    <link rel="stylesheet" href="Feuilles_de_styles/largedesktopstyle.css" media="all and (min-width:1201px)">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
@@ -36,8 +36,7 @@
             <form method="POST" action="#">
                 <p><svg id="mapMarkerIcon" width="15" height="15" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg></p>    
                 <input type="search" name="cityChoice" placeholder="Marseille, France" size="24"/>
-                <button type="submit" class="desktopItems">Rechercher</button>
-                <button type="submit" class="mobileItems"><svg id="searchIcon" width="15" height="15" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
+                <button type="submit"><span class="desktopItems">Rechercher</span><span class="mobileItems"><svg id="searchIcon" width="15" height="15" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button>
             </form>
         </div>
         <div id="filtersPart">
@@ -63,15 +62,12 @@
             <div class="flexSections" id="sectionAccomodationsAll">
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Auberge la Cannebière" 
-                            srcset="images/hebergements/4_small/aubergecannebieresmall.jpg 750w,
-                            ./images/hebergements/3_medium/aubergecannebieremedium.jpg 1499w,
-                            ./images/hebergements/2_large/aubergecannebierelarge.jpg 2997w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/aubergecannebierelarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/aubergecannebieresmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/aubergecannebieremedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/aubergecannebierelarge.jpg">
+                            <img src="images/hebergements/2_large/aubergecannebierelarge.jpg" alt="Photographie Auberge la Cannebière" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                             <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
@@ -88,15 +84,12 @@
 
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Hôtel du port" 
-                            srcset="images/hebergements/4_small/hotelduportsmall.jpg 684w,
-                            ./images/hebergements/3_medium/hotelduportmedium.jpg 1368w,
-                            ./images/hebergements/2_large/hotelduportlarge.jpg 2736w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/hotelduportlarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/hotelduportsmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/hotelduportmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/hotelduportlarge.jpg">
+                            <img src="images/hebergements/2_large/hotelduportlarge.jpg" alt="Photographie Hôtel du port" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52<strong>€</strong></p>
@@ -113,17 +106,15 @@
 
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Hôtel Les Mouettes" 
-                            srcset="images/hebergements/4_small/lesmouettessmall.jpg 750w,
-                            ./images/hebergements/3_medium/lesmouettesmedium.jpg 1500w,
-                            ./images/hebergements/2_large/lesmouetteslarge.jpg 3000w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/lesmouetteslarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/lesmouettessmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/lesmouettesmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/lesmouetteslarge.jpg">
+                            <img src="images/hebergements/2_large/lesmouetteslarge.jpg" alt="Photographie Hôtel Les Mouettes" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                             <h3>Hôtel Les Mouettes</h3>
+
                             <p>Nuit à partir de 76<strong>€</strong></p>
                             <p>
                                 <svg class="blueStar" width="15" height="15" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
@@ -138,15 +129,12 @@
 
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Hôtel de la Mer" 
-                            srcset="images/hebergements/4_small/hoteldelamersmall.jpg 500w,
-                            ./images/hebergements/3_medium/hoteldelamermedium.jpg 1000w,
-                            ./images/hebergements/2_large/hoteldelamerlarge.jpg 2000w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/hoteldelamerlarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/hoteldelamersmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/hoteldelamermedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/hoteldelamerlarge.jpg">
+                            <img src="images/hebergements/2_large/hoteldelamerlarge.jpg" alt="Photographie Hôtel de la Mer" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46<strong>€</strong></p>
@@ -163,15 +151,12 @@
 
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie auberge Le Panier" 
-                            srcset="images/hebergements/4_small/aubergepaniersmall.jpg 652w,
-                            ./images/hebergements/3_medium/aubergepaniermedium.jpg 1303w,
-                            ./images/hebergements/2_large/aubergepanierlarge.jpg 2606w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/aubergepanierlarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/aubergepaniersmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/aubergepaniermedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/aubergepanierlarge.jpg">
+                            <img src="images/hebergements/2_large/aubergepanierlarge.jpg" alt="Photographie auberge Le Panier" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de <strong>23€</strong></p>
@@ -188,15 +173,12 @@
 
                 <article class="horizontalArticle whiteBorder">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Hôtel Chez Amina" 
-                            srcset="images/hebergements/4_small/chezaminasmall.jpg 486w,
-                            ./images/hebergements/3_medium/chezaminamedium.jpg 972w,
-                            ./images/hebergements/2_large/chezaminalarge.jpg 1944w"
-                            sizes="(max-width:440px) 440px, (max-width:991px) 330px, 450px"
-                            src="images/activites/2_large/chezaminalarge.jpg"
-                            class="horizontalArticle_image sectionAccomodationsAll_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/chezaminasmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/chezaminamedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/chezaminalarge.jpg">
+                            <img src="images/hebergements/2_large/chezaminalarge.jpg" alt="Photographie Hôtel Chez Amina" class="horizontalArticle_image sectionAccomodationsAll_image">
+                        </picture>
                         <div class="horizontalArticle_text">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96<strong>€</strong></p>
@@ -223,15 +205,12 @@
             <div class="flexSections" id="sectionAccomodationsPopular">
                 <article class="sectionAccomodationsPopular_item">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie chambre Hôtel le soleil du matin" 
-                            srcset="images/hebergements/4_small/soleildumatinsmall.jpg 532w,
-                            ./images/hebergements/3_medium/soleildumatinmedium.jpg 1063w,
-                            ./images/hebergements/2_large/soleildumatinlarge.jpg 2125w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 300px, 450px"
-                            src="images/activites/2_large/soleildumatinlarge.jpg"
-                            class="sectionAccomodationsPopular_item_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/soleildumatinsmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/soleildumatinmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/soleildumatinlarge.jpg">
+                            <img src="images/hebergements/2_large/soleildumatinlarge.jpg" alt="Photographie chambre Hôtel le soleil du matin" class="sectionAccomodationsPopular_item_image">
+                        </picture>
                         <div class="sectionAccomodationsPopular_item_text">
                             <h3>Hôtel le soleil du <br>matin</h3>
                             <p>Nuit à partir de 128<strong>€</strong></p><br>
@@ -248,15 +227,12 @@
 
                 <article class="sectionAccomodationsPopular_item">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie chambre Au coeur de l'eau" 
-                            srcset="images/hebergements/4_small/aucoeurdeleausmall.jpg 504w,
-                            ./images/hebergements/3_medium/aucoeurdeleaumedium.jpg 1008w,
-                            ./images/hebergements/2_large/aucoeurdeleaularge.jpg 2016w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 300px, 450px"
-                            src="images/hebergements/2_large/aucoeurdeleaularge.jpg"
-                            class="sectionAccomodationsPopular_item_image">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/aucoeurdeleausmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/aucoeurdeleaumedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/aucoeurdeleaularge.jpg">
+                            <img src="images/hebergements/2_large/aucoeurdeleaularge.jpg" alt="Photographie chambre Au coeur de l'eau" class="sectionAccomodationsPopular_item_image">
+                        </picture>
                         <div class="sectionAccomodationsPopular_item_text">
                             <h3>Au coeur de l'eau Chambres d'hotes</h3>
                             <p>Nuit à partir de 71<strong>€</strong></p><br>
@@ -273,15 +249,12 @@
 
                 <article class="sectionAccomodationsPopular_item">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie chambre Hôtel Tout bleu et Blanc" 
-                            srcset="./images/hebergements/4_small/toutbleuetblancsmall.jpg 500w,
-                            ./images/hebergements/3_medium/toutbleuetblancmedium.jpg 1000w,
-                            ./images/hebergements/2_large/toutbleuetblanclarge.jpg 2000w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 300px, 450px"
-                            src="images/hebergements/2_large/aucoeurdeleaularge.jpg"
-                            class="sectionAccomodationsPopular_item_image"> 
-                        </p>
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="images/hebergements/4_small/toutbleuetblancsmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/hebergements/3_medium/toutbleuetblancmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/hebergements/2_large/toutbleuetblanclarge.jpg">
+                            <img src="images/hebergements/2_large/toutbleuetblanclarge.jpg" alt="Photographie chambre Hôtel Tout bleu et Blanc" class="sectionAccomodationsPopular_item_image">
+                        </picture>
                         <div class="sectionAccomodationsPopular_item_text">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 71<strong>€</strong></p><br>
@@ -305,15 +278,12 @@
         <div class="flexSections">             
             <article class="horizontalArticle expandedArticle">
                 <a href="#">
-                    <p>
-                        <img alt="Photographie Vieux Port" 
-                            class="horizontalArticle_image horizontalArticleActivities_image"
-                            srcset="./images/activites/4_small/vieuxportsmall.jpg 702w,
-                            ./images/activites/3_medium/vieuxportmedium.jpg 1404w,
-                            ./images/activites/2_large/vieuxportlarge.jpg 2808w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                            src="images/activites/2_large/vieuxportlarge.jpg">
-                    </p>               
+                    <picture>
+                        <source media="(max-width: 442px)" srcset="images/activites/4_small/vieuxportsmall.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/activites/3_medium/vieuxportmedium.jpg">
+                        <source media="(min-width: 1201px)" srcset="images/activites/2_large/vieuxportlarge.jpg">
+                        <img src="images/activites/2_large/vieuxportlarge.jpg" alt="Photographie Vieux Port" class="horizontalArticle_image horizontalArticleActivities_image">
+                    </picture>           
                     <div class="horizontalArticle_text">
                         <h3>Vieux Port</h3>
                     </div>
@@ -324,15 +294,12 @@
             <div class="flexSections_contractedArticle">
                 <article class="horizontalArticle contractedArticle">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Fort de Pomègues" 
-                                class="horizontalArticle_image horizontalArticleActivities_image"
-                                srcset="./images/activites/4_small/fortpomeguessmall.jpg 356w,
-                                ./images/activites/3_medium/fortpomeguesmedium.jpg 711w,
-                                ./images/activites/2_large/fortpomegueslarge.jpg 1422w"
-                                sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                                src="images/activites/2_large/fortpomegueslarge.jpg">  
-                        </p>
+                        <picture>
+                            <source media="(max-width: 442px)" srcset="images/activites/4_small/fortpomeguessmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/activites/3_medium/fortpomeguesmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/activites/2_large/fortpomegueslarge.jpg">
+                            <img src="images/activites/2_large/fortpomegueslarge.jpg" alt="Photographie Fort de Pomègues" class="horizontalArticle_image horizontalArticleActivities_image">
+                        </picture>  
                         <div class="horizontalArticle_text">
                             <h3>Fort de Pomègues</h3>
                         </div>
@@ -341,15 +308,12 @@
 
                 <article class="horizontalArticle contractedArticle">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Iles du Frioul" 
-                                class="horizontalArticle_image horizontalArticleActivities_image"
-                                srcset="./images/activites/4_small/ilesfrioulsmall.jpg 648w,
-                                ./images/activites/3_medium/ilesfrioulmedium.jpg 1296w,
-                                ./images/activites/2_large/ilesfrioullarge.jpg 2592w"
-                                sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                                src="images/activites/2_large/ilesfrioullarge.jpg">
-                        </p>  
+                        <picture>
+                            <source media="(max-width: 442px)" srcset="images/activites/4_small/ilesfrioulsmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/activites/3_medium/ilesfrioulmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/activites/2_large/ilesfrioullarge.jpg">
+                            <img src="images/activites/2_large/ilesfrioullarge.jpg" alt="Photographie Iles du Frioul" class="horizontalArticle_image horizontalArticleActivities_image">
+                        </picture> 
                         <div class="horizontalArticle_text">
                             <h3>Iles du Frioul</h3>
                         </div>
@@ -360,15 +324,12 @@
 
             <article class="horizontalArticle expandedArticle">
                 <a href=#>
-                    <p>
-                        <img alt="Photographie Parc National des Calanques" 
-                        class="horizontalArticle_image horizontalArticleActivities_image"
-                        srcset="./images/activites/4_small/parccalanquessmall.jpg 606w,
-                        ./images/activites/3_medium/parccalanquesmedium.jpg 1212w,
-                        ./images/activites/2_large/parccalanqueslarge.jpg 2423w"
-                        sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                        src="images/activites/2_large/parccalanqueslarge.jpg">
-                    </p>        
+                    <picture>
+                        <source media="(max-width: 442px)" srcset="images/activites/4_small/parccalanquessmall.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/activites/3_medium/parccalanquesmedium.jpg">
+                        <source media="(min-width: 1201px)" srcset="images/activites/2_large/parccalanqueslarge.jpg">
+                        <img src="images/activites/2_large/parccalanqueslarge.jpg" alt="Photographie Parc National des Calanques" class="horizontalArticle_image horizontalArticleActivities_image">
+                    </picture>    
                     <div class="horizontalArticle_text">
                         <h3>Parc National des Calanques</h3>
                     </div>
@@ -379,15 +340,12 @@
             <div class="flexSections_contractedArticle">
                 <article class="horizontalArticle contractedArticle">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Notre-Dame-De-La-Garde" 
-                            class="horizontalArticle_image horizontalArticleActivities_image"
-                            srcset="./images/activites/4_small/notre-dame-de-la-gardesmall.jpg 589w,
-                            ./images/activites/3_medium/notre-dame-de-la-gardemedium.jpg 1178w,
-                            ./images/activites/2_large/notre-dame-de-la-gardelarge.jpg 2356w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                            src="images/activites/2_large/notre-dame-de-la-gardelarge.jpg">
-                        </p>        
+                        <picture>
+                            <source media="(max-width: 442px)" srcset="images/activites/4_small/notre-dame-de-la-gardesmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/activites/3_medium/notre-dame-de-la-gardemedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/activites/2_large/notre-dame-de-la-gardelarge.jpg">
+                            <img src="images/activites/2_large/notre-dame-de-la-gardelarge.jpg" alt="Photographie Notre-Dame-De-La-Garde" class="horizontalArticle_image horizontalArticleActivities_image">
+                        </picture>    
                         <div class="horizontalArticle_text">
                             <h3>Notre-Dame-De-La-Garde</h3>
                         </div>
@@ -396,15 +354,12 @@
 
                 <article class="horizontalArticle contractedArticle">
                     <a href="#">
-                        <p>
-                            <img alt="Photographie Parc Longchamp" 
-                            class="horizontalArticle_image horizontalArticleActivities_image"
-                            srcset="./images/activites/4_small/parclongchampsmall.jpg 504w,
-                            ./images/activites/3_medium/parclongchampmedium.jpg 1008w,
-                            ./images/activites/2_large/parclongchamplarge.jpg 2016w"
-                            sizes="(max-width:440px) 400px, (max-width:991px) 400px, 900px"
-                            src="images/activites/2_large/parclongchamplarge.jpg">
-                        </p>        
+                        <picture>
+                            <source media="(max-width: 442px)" srcset="images/activites/4_small/parclongchampsmall.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/activites/3_medium/parclongchampmedium.jpg">
+                            <source media="(min-width: 1201px)" srcset="images/activites/2_large/parclongchamplarge.jpg">
+                            <img src="images/activites/2_large/parclongchamplarge.jpg" alt="Photographie Parc Longchamp" class="horizontalArticle_image horizontalArticleActivities_image">
+                        </picture>         
                         <div class="horizontalArticle_text">
                             <h3>Parc Longchamp</h3>
                         </div>
