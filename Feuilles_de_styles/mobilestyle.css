@@ -19,9 +19,10 @@ nav li:not(:last-child)
     text-align: center;
 }
 
-nav li:not(:last-child):focus
+nav li:not(:last-child):active
 {
-    border-bottom:#0065FC solid 2px;
+    /* border-bottom:#0065FC solid 2px; */
+    color:red;
 }
 
 h1, h2
