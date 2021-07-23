@@ -98,6 +98,7 @@ footer
 #filtersPart ul
 {
     height:170px;
+    padding:0px 0px 0px 2px;
 }
 
 /* Icônes */
@@ -105,12 +106,6 @@ footer
 {
     padding:10px;
 }
-
-#searchIcon
-{
-    fill:white;
-}
-
 
 /* Contenu hébergements */
 /* Classes */
@@ -181,7 +176,7 @@ footer
 #sectionAccomodationsPopular_title
 {
     width:80%;
-    align-items:flex-end;
+    align-items:baseline;
 }
 
 

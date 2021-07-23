@@ -143,15 +143,21 @@ footer
 }
 
 /* ID */
+#intro
+{
+    padding-left:5px;
+}
 #infoPart
 {
     display:flex;
     margin:10px 0px 10px 0px;
+    position:relative;
 }
 
 #infoPart_availableAccomodations
 {
     margin:5px 0px 10px 10px;
+    padding-left:20px;
 }
 
 /* Icônes */
@@ -163,18 +169,25 @@ footer
     position:relative;
     left:-1px;
     top:-1px;
-    font-size: 0.9em;
+    font-size: 1em;
+}
+
+#infoPart_circle
+{
+    position:absolute;
+    top:3px;
+    font-size:20px;
+    color:rgba(128, 128, 128,0.3);
 }
 
 #infoPart_icon
 {
-    background-color:#0065FC;
-    fill:white;
-    border-radius:50%;
-    position:relative;
-    top:2px;
+    position:absolute;
+    top:8px;
+    left:8px;
+    color: #0065FC;
+    font-size:10px;
 }
-
 
 
 /* Contenu hébergements */
@@ -265,6 +278,11 @@ footer
     margin: 0 auto;
 }
 
+#sectionAccomodationsPopular_title i
+{
+    font-size:18px;
+}
+
 /* Contenu activités */
 /* Classes */
 .flexSections_contractedArticle
@@ -291,10 +309,12 @@ footer
 /* Icônes */
 .filters_icon, .blueStar
 {
-    fill: #0065FC;    
+    color: #0065FC;
+    font-size:14px;    
 }
 
 .greyStar
 {
-    fill:rgba(128, 128, 128,0.3);
+    color:rgba(128, 128, 128,0.3);
+    font-size:14px;   
 }
